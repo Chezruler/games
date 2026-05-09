@@ -10,7 +10,7 @@ def randomnumber():
 def main():
     while True:
         print("Welcome! this is a small project made by Chez, any tips please give to my discord, i really appreciate it")
-        startinput = input("Wanna start playing (y/N): ")
+        startinput = input("Wanna start playing (y/n): ")
         if startinput == ("y"):
             os.system('cls' if os.name == 'nt' else 'clear')
             while True:
