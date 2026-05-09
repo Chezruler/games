@@ -11,7 +11,7 @@ def main():
     while True:
         print("Welcome! this is a small project made by Chez, any tips please give to my discord, i really appreciate it")
         startinput = input("Wanna start playing (y/n): ")
-        if startinput == ("y"):
+        if startinput == ("y").lower:
             os.system('cls' if os.name == 'nt' else 'clear')
             while True:
                 number = input("What number are you choosing? (1/10): ")
@@ -22,7 +22,7 @@ def main():
 
                 number = int(number)
 
-                if number > 10:
+                if number > 10 and number < 0:
                     print("Thats not possible, try under 10")
                     continue
 
@@ -34,14 +34,14 @@ def main():
                     print(f"You lost! The number was {randomdigit}!")
                 
                 playagaininput = input("Do you want to play again?: ")
-                if playagaininput == ("y"):
+                if playagaininput == ("y").lower:
                     sleep(1)
                     os.system('cls' if os.name == 'nt' else 'clear')
                     continue
-                if playagaininput ==("n"):
+                if playagaininput ==("n").lower:
                     break               
             
-        if startinput == ("n"):
+        if startinput == ("n").lower:
             break
     
 
